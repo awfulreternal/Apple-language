@@ -1,0 +1,13 @@
+#include "filesystem.h"
+
+// ... Библиотека для работы с файловой системой ...
+
+string readFile(const string& path) {
+  // ... Логика чтения файла ...
+}
+
+void writeFile(const string& path, const string& content) {
+  // ... Логика записи в файл ...
+}
+
+// ... Другие функции для работы с файловой системой ...
