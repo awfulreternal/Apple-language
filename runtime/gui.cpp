@@ -1,0 +1,13 @@
+#include "gui.h"
+
+// ... Библиотека для создания графических интерфейсов ...
+
+Window createWindow(const string& title, int width, int height) {
+  // ... Логика создания окна ...
+}
+
+Button createButton(const string& text) {
+  // ... Логика создания кнопки ...
+}
+
+// ... Другие функции для работы с GUI ...
