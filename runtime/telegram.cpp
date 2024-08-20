@@ -1,0 +1,9 @@
+#include "telegram.h"
+
+// ... Библиотека Telegram API ...
+
+void sendMessage(int chatId, const string& text) {
+  // ... Логика отправки сообщения в Telegram ...
+}
+
+// ... Другие функции Telegram API ...
