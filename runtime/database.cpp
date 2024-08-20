@@ -1,13 +1,22 @@
-#include "database.h"
+#include <iostream>
+#include <vector>
+#include <string>
+#include <map>
 
-// ... Библиотека для работы с базами данных ...
+using namespace std;
 
-Connection connect(const string& databaseName) {
-  // ... Логика подключения к базе данных ...
-}
+// Класс для работы с базами данных
+class Database {
+public:
+  void connect(const string& databaseName) {
+    cout << "Connecting to database: " << databaseName << endl;
+  }
 
-void executeQuery(Connection connection, const string& query) {
-  // ... Логика выполнения SQL-запроса ...
-}
+  void executeQuery(const string& query) {
+    cout << "Executing query: " << query << endl;
+  }
 
-// ... Другие функции для работы с базами данных ...
+  // ... Другие функции для работы с базами данных ...
+};
+
+// ... Другие определения ...
