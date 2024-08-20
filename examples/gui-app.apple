@@ -1,0 +1,12 @@
+pick gui.createWindow;
+pick gui.createButton;
+
+func handleClick(event: gui.event) -> void {
+  print("Button clicked!");
+}
+
+var window: gui.window = createWindow("My Apple App", 400, 300);
+var button: gui.button = createButton("Click me!");
+button.on_click(handleClick); // Обработчик события нажатия на кнопку
+window.add(button);
+window.show();
