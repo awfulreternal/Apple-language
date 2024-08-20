@@ -1,9 +1,18 @@
-#include "telegram.h"
+#include <iostream>
+#include <vector>
+#include <string>
+#include <map>
 
-// ... Библиотека Telegram API ...
+using namespace std;
 
-void sendMessage(int chatId, const string& text) {
-  // ... Логика отправки сообщения в Telegram ...
-}
+// Класс для работы с Telegram API
+class Telegram {
+public:
+  void sendMessage(int chatId, const string& text) {
+    cout << "Sending message to chat ID " << chatId << ": " << text << endl;
+  }
 
-// ... Другие функции Telegram API ...
+  // ... Другие функции Telegram API ...
+};
+
+// ... Другие определения ...
