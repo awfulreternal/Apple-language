@@ -1,0 +1,10 @@
+pick web.createServer;
+pick web.sendResponse;
+pick web.on_request;
+
+func handleRequest(request: web.request) -> void {
+  web.sendResponse(request, "<h1>Welcome to my Apple website!</h1>");
+}
+
+var server: web.server = createServer(8080);
+server.on_request(handleRequest);
