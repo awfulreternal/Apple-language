@@ -1,13 +1,22 @@
-#include "web.h"
+#include <iostream>
+#include <vector>
+#include <string>
+#include <map>
 
-// ... Библиотека для веб-разработки ...
+using namespace std;
 
-void createServer(int port) {
-  // ... Логика создания веб-сервера ...
-}
+// Класс для веб-разработки
+class Web {
+public:
+  void createServer(int port) {
+    cout << "Creating web server on port " << port << endl;
+  }
 
-void sendResponse(const Request& request, const string& content) {
-  // ... Логика отправки ответа на HTTP-запрос ...
-}
+  void sendResponse(const string& request, const string& content) {
+    cout << "Sending response to request: " << content << endl;
+  }
 
-// ... Другие функции для веб-разработки ...
+  // ... Другие функции для веб-разработки ...
+};
+
+// ... Другие определения ...
