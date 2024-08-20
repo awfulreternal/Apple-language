@@ -1,13 +1,22 @@
-#include "gui.h"
+#include <iostream>
+#include <vector>
+#include <string>
+#include <map>
 
-// ... Библиотека для создания графических интерфейсов ...
+using namespace std;
 
-Window createWindow(const string& title, int width, int height) {
-  // ... Логика создания окна ...
-}
+// Класс для создания графических интерфейсов
+class Gui {
+public:
+  void createWindow(const string& title, int width, int height) {
+    cout << "Creating window: " << title << " (" << width << "x" << height << ")" << endl;
+  }
 
-Button createButton(const string& text) {
-  // ... Логика создания кнопки ...
-}
+  void createButton(const string& text) {
+    cout << "Creating button: " << text << endl;
+  }
 
-// ... Другие функции для работы с GUI ...
+  // ... Другие функции для работы с GUI ...
+};
+
+// ... Другие определения ...
