@@ -1,0 +1,13 @@
+pick telegram.sendMessage;
+pick telegram.getUpdates;
+pick telegram.onMessage;
+
+var chatId: int = 123456789; // ID чата
+
+onMessage(func(message: telegram.message) -> void {
+  if message.text == "Hello" {
+    sendMessage(message.chat.id, "Hello to you too!");
+  } else {
+    sendMessage(message.chat.id, "I don't understand.");
+  }
+});
