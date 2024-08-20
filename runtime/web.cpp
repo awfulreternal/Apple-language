@@ -1,0 +1,13 @@
+#include "web.h"
+
+// ... Библиотека для веб-разработки ...
+
+void createServer(int port) {
+  // ... Логика создания веб-сервера ...
+}
+
+void sendResponse(const Request& request, const string& content) {
+  // ... Логика отправки ответа на HTTP-запрос ...
+}
+
+// ... Другие функции для веб-разработки ...
