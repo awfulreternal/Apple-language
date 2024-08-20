@@ -1,0 +1,13 @@
+#include "database.h"
+
+// ... Библиотека для работы с базами данных ...
+
+Connection connect(const string& databaseName) {
+  // ... Логика подключения к базе данных ...
+}
+
+void executeQuery(Connection connection, const string& query) {
+  // ... Логика выполнения SQL-запроса ...
+}
+
+// ... Другие функции для работы с базами данных ...
